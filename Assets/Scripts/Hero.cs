@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class Hero : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
     [SerializeField] private Slider _healthBar;
-    
+    [SerializeField] private string _levelToReset = "Level 1";    
+
     private void Update()
     {
         _healthBar.value=_health;
@@ -18,7 +21,8 @@ public class Hero : MonoBehaviour
         if (_health <= 0)
         {
             Die();
-            _healthBar.gameObject.SetActive(false);
+            _healthBar.gameObject.SetActive(false);            
+            RestartLevel();
         }        
     }
 
@@ -39,4 +43,9 @@ public class Hero : MonoBehaviour
             }
         }
     }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(_levelToReset);
+    }    
 }

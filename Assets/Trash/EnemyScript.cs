@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    public Transform target;
-    public float detectionRadius = 10f;
-    public float shootingRadius = 5f;
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-    public float bulletSpeed;
-    public float fireRate = 1f; 
+    [SerializeField] private Transform _target;
+    [SerializeField] private float _detectionRadius = 10f;
+    [SerializeField] private float _shootingRadius = 5f;
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private Transform _firePoint;
+    [SerializeField] private float _bulletSpeed;
+    [SerializeField] private float _fireRate = 1f;    
 
     private Animator animator;
     private float fireTimer;
@@ -16,14 +16,14 @@ public class EnemyScript : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        fireTimer = fireRate; 
+        fireTimer = _fireRate;
     }
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, target.position) <= detectionRadius)
+        if(_target!=null&&Vector3.Distance(transform.position,_target.position)<=_detectionRadius)        
         {
-            if (Vector3.Distance(transform.position, target.position) <= shootingRadius)
+            if (Vector3.Distance(transform.position, _target.position) <= _shootingRadius)
             {
                 FireTimerUpdate();
             }
@@ -47,7 +47,7 @@ public class EnemyScript : MonoBehaviour
 
     private void LookAtTarget()
     {
-        Vector3 direction = target.position - transform.position;
+        Vector3 direction = _target.position - transform.position;
         direction.y = 0;
         Quaternion rotation = Quaternion.LookRotation(direction);
         transform.rotation = rotation;
@@ -55,14 +55,14 @@ public class EnemyScript : MonoBehaviour
 
     private void FireTimerUpdate()
     {
-        fireTimer -= Time.deltaTime; 
+        fireTimer -= Time.deltaTime;
 
         if (fireTimer <= 0f)
         {
             animator.SetTrigger("Fire");
             animator.SetBool("Fire", true);
             Shoot();
-            fireTimer = fireRate;
+            fireTimer = _fireRate;
         }
     }
 
@@ -70,15 +70,15 @@ public class EnemyScript : MonoBehaviour
     {
         animator.SetTrigger("Fire");
 
-        GameObject bulletObject = Instantiate(bulletPrefab, firePoint.position, Quaternion.Euler(0, transform.eulerAngles.y, 0));
+        GameObject bulletObject = Instantiate(_bulletPrefab, _firePoint.position, Quaternion.Euler(0, transform.eulerAngles.y, 0));
         Bullet bullet = bulletObject.GetComponent<Bullet>();
         if (bullet != null)
         {
-            Vector3 direction = target.position - firePoint.position;
+            Vector3 direction = _target.position - _firePoint.position;
             bullet.SetDirection(direction);
         }
 
         Rigidbody bulletRigidbody = bulletObject.GetComponent<Rigidbody>();
-        bulletRigidbody.velocity = firePoint.forward * bulletSpeed;
+        bulletRigidbody.velocity = _firePoint.forward * _bulletSpeed;
     }
 }
