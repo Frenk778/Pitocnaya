@@ -7,7 +7,8 @@ public class PhysicalObject : MonoBehaviour
 
     private void Start()
     {
-        TurnOnKinematic();        
+        TurnOnKinematic();
+        TurnOnuseGravity();
     }
 
     public void TurnOnKinematic()
@@ -15,6 +16,11 @@ public class PhysicalObject : MonoBehaviour
 
     public void TurnOffKinematic()
         => ControlKinematic(false);
+
+    public void TurnOnuseGravity() => ControluseGravity(true);
+    public void TurnOffuseGravity() => ControluseGravity(false);
+
+
 
     public void EachBody(Action<Rigidbody> eachBodyDelegate)
     {
@@ -27,6 +33,14 @@ public class PhysicalObject : MonoBehaviour
         for (int i = 0; i < _rigidBodies.Length; i++)
         {
             _rigidBodies[i].isKinematic = isTurn;
+        }
+    }    
+
+    private void ControluseGravity(bool isTurn)
+    {
+        for (int i = 0; i < _rigidBodies.Length; i++)
+        {
+            _rigidBodies[i].useGravity = isTurn;
         }
     }
 }

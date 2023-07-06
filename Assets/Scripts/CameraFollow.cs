@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 offset;
+    [SerializeField] private Transform _target;
+    [SerializeField] private Vector3 _offset;
 
     void Start()
     {
-        transform.position = target.position + offset;
+        transform.position = _target.position + _offset;
     }
 
     void LateUpdate()
     {        
-        if (target != null)
+        if (_target != null)
         {
-            transform.position = target.position + offset;
+            transform.position = _target.position + _offset;
         }
     }
 }
