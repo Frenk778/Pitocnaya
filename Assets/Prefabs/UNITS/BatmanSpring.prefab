@@ -1513,8 +1513,6 @@ GameObject:
   - component: {fileID: 4747588217462702273}
   - component: {fileID: 4747588217462702283}
   - component: {fileID: 6771859334101184494}
-  - component: {fileID: 3930447591936363902}
-  - component: {fileID: 7642807580595595488}
   m_Layer: 8
   m_Name: mixamorig:Hips
   m_TagString: Untagged
@@ -1669,32 +1667,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3930447591936363902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4747588217462702277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b802106747d195140942ad3d1f2bf1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _damage: 100
---- !u!114 &7642807580595595488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4747588217462702277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b646231273b179f47812d60f4ba26ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <MaxValue>k__BackingField: 100
 --- !u!1 &4981206596316893884
 GameObject:
   m_ObjectHideFlags: 0
