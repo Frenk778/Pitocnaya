@@ -1736,8 +1736,8 @@ RectTransform:
   - {fileID: 8683590504770873193}
   - {fileID: 5669034325195653043}
   - {fileID: 6880765970700828265}
-  m_Father: {fileID: 4836897940095894417}
-  m_RootOrder: 2
+  m_Father: {fileID: 1112476794381034245}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3262,7 +3262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4836897940095894417}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8037618089930167854
 SpriteRenderer:
@@ -3490,9 +3490,8 @@ Transform:
   m_Children:
   - {fileID: 8119564650220446894}
   - {fileID: 1112476794381034245}
-  - {fileID: 2168069715870188108}
-  - {fileID: 7492168234963699482}
   - {fileID: 6306400458930778616}
+  - {fileID: 7492168234963699482}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -3606,7 +3605,7 @@ GameObject:
   - component: {fileID: 4286586809403596512}
   m_Layer: 6
   m_Name: mixamorig:Hips
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3627,6 +3626,7 @@ Transform:
   - {fileID: 3888258074834752570}
   - {fileID: 799589143967961238}
   - {fileID: 1733168882704791029}
+  - {fileID: 2168069715870188108}
   m_Father: {fileID: 4836897940095894417}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3642,7 +3642,7 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3656,10 +3656,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.18576698
-  m_Height: 1.434613
+  m_Radius: 0.20341206
+  m_Height: 1.451209
   m_Direction: 1
-  m_Center: {x: 0.0013019243, y: -0.14491558, z: 0.014457802}
+  m_Center: {x: 0.0026225648, y: -0.13661774, z: 0.014457802}
 --- !u!95 &1112476794381034244
 Animator:
   serializedVersion: 4
@@ -3670,7 +3670,7 @@ Animator:
   m_GameObject: {fileID: 5453759013343574640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5fa36aa56c73889499c71625f5c8c62f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 03c0c84a4e8a8194cb5081a49716db69, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _healthBar: {fileID: 2315436774514803201}
-  _levelToReset: Level 1
+  _levelToReset: Level 2
 --- !u!1 &5842237026238302401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4022,7 +4022,6 @@ GameObject:
   - component: {fileID: 6548959090285489809}
   - component: {fileID: 97926511841673469}
   - component: {fileID: 5053019545386450184}
-  - component: {fileID: 4296577437446164982}
   - component: {fileID: 4429306410785652817}
   - component: {fileID: 8031159848069510224}
   - component: {fileID: 803271518038420656}
@@ -4242,20 +4241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _move: {fileID: 1462758232590247586}
---- !u!114 &4296577437446164982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990999700765100411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 234edb3c0fe6a5c44825be5d5dc6f489, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shootPoint: {fileID: 2227544365085104008}
-  _drawSpeed: 10
 --- !u!114 &4429306410785652817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4343,7 +4328,7 @@ GameObject:
   - component: {fileID: 5446401077525830958}
   m_Layer: 0
   m_Name: Hangler
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

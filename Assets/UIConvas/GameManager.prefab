@@ -78,6 +78,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPrefacbs:
   - {fileID: 4665690215165352335, guid: 63369cdf0d3c9c8439c46f824f09c55b, type: 3}
-  - {fileID: 919136626546977476, guid: 751585905eec6934eaea3e014af3f146, type: 3}
+  - {fileID: 868992395397266374, guid: 30ba52694f8dffc4dbe581d2a8650bc4, type: 3}
   - {fileID: 5218490681198926123, guid: 2e4614297c6c66546bf42331d8ba955b, type: 3}
   spawPoint: {fileID: 6798547655582352102}
