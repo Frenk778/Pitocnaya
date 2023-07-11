@@ -7,7 +7,10 @@ public class Hero : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
     [SerializeField] private Slider _healthBar;
-    [SerializeField] private string _levelToReset = "Level 1";    
+    [SerializeField] private string _levelToReset = "Level 1";
+    [field: SerializeField] public Transform Hips { get; private set; }
+
+
 
     private void Update()
     {

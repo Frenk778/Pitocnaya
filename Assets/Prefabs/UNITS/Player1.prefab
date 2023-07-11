@@ -2622,6 +2622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5473012828002714421}
   - component: {fileID: 4529020437893477352}
+  - component: {fileID: 4219969293572839037}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -2712,6 +2713,19 @@ MonoBehaviour:
   - {fileID: 4529020437679449964}
   - {fileID: 4529020439135265449}
   - {fileID: 4529020437324643698}
+--- !u!114 &4219969293572839037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665690215165352335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43be6ddb89033264d994583b7f289a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Hips>k__BackingField: {fileID: 550669403957257121}
 --- !u!1 &4760546353690922411
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,6 +3053,7 @@ MonoBehaviour:
   _health: 100
   _healthBar: {fileID: 2365231458478093862}
   _levelToReset: Level 1
+  <Hips>k__BackingField: {fileID: 550669403957257121}
 --- !u!1 &5125495294307682907
 GameObject:
   m_ObjectHideFlags: 0

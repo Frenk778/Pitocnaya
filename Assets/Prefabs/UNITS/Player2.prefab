@@ -3469,6 +3469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4836897940095894417}
   - component: {fileID: 4836897940095894416}
+  - component: {fileID: 776345679441053238}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -3556,6 +3557,19 @@ MonoBehaviour:
   - {fileID: 8413415305442940178}
   - {fileID: 642571826202125995}
   - {fileID: 6548959090285489809}
+--- !u!114 &776345679441053238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218490681198926123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43be6ddb89033264d994583b7f289a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Hips>k__BackingField: {fileID: 1112476794381034245}
 --- !u!1 &5387653741769477391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,6 +3766,7 @@ MonoBehaviour:
   _health: 100
   _healthBar: {fileID: 2315436774514803201}
   _levelToReset: Level 2
+  <Hips>k__BackingField: {fileID: 0}
 --- !u!1 &5842237026238302401
 GameObject:
   m_ObjectHideFlags: 0
