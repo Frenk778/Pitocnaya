@@ -1,16 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System;
 
 public class Hero : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
-    [SerializeField] private Slider _healthBar;
-    [SerializeField] private string _levelToReset = "Level 1";
+    [SerializeField] private Slider _healthBar;    
     [field: SerializeField] public Transform Hips { get; private set; }
-
-
+    public int Health { get => _health; set => _health = value; }   
 
     private void Update()
     {
@@ -24,8 +20,7 @@ public class Hero : MonoBehaviour
         if (_health <= 0)
         {
             Die();
-            _healthBar.gameObject.SetActive(false);            
-            RestartLevel();
+            _healthBar.gameObject.SetActive(false);               
         }        
     }
 
@@ -45,10 +40,5 @@ public class Hero : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
-    }
-
-    private void RestartLevel()
-    {
-        SceneManager.LoadScene(_levelToReset);
     }    
 }

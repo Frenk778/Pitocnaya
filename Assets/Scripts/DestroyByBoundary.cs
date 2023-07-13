@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DestroyByBoundary : MonoBehaviour
 {
-
-    [SerializeField] private string _levelToReset = "Level 1";
+    [SerializeField] private string _levelToReset = "Level 1";      
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +22,6 @@ public class DestroyByBoundary : MonoBehaviour
 
     private void RestartLevel()
     {
-        SceneManager.LoadScene(_levelToReset);
+        SceneManager.LoadScene(_levelToReset);        
     }
 }

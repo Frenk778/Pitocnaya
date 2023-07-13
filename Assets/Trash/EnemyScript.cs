@@ -17,7 +17,8 @@ public class EnemyScript : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         fireTimer = _fireRate;
-    }
+    }    
+
 
     private void Update()
     {
@@ -80,5 +81,10 @@ public class EnemyScript : MonoBehaviour
 
         Rigidbody bulletRigidbody = bulletObject.GetComponent<Rigidbody>();
         bulletRigidbody.velocity = _firePoint.forward * _bulletSpeed;
+    }
+
+    public void SetTarget(Transform target)
+    {
+        _target = target;
     }
 }

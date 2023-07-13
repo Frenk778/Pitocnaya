@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CollectCoin : MonoBehaviour
 {
-
     private void OnTriggerEnter(Collider other)
     {
         CollactableControl.CoinCount += 1;

@@ -138,10 +138,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
   _detectionRadius: 10
-  _shootingRadius: 5
-  _bulletPrefab: {fileID: 0}
-  _firePoint: {fileID: 0}
-  _bulletSpeed: 0
+  _shootingRadius: 10
+  _bulletPrefab: {fileID: 8661329723029865026, guid: 6636474722362fd4796075941ec644c8, type: 3}
+  _firePoint: {fileID: 6132079671121100064}
+  _bulletSpeed: 15
   _fireRate: 1
 --- !u!1001 &7263341618643974788
 PrefabInstance:

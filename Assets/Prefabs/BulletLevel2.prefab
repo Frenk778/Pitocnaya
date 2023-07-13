@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9036652746000069301}
   - component: {fileID: -7203065284685034627}
   m_Layer: 0
-  m_Name: Bullet00
+  m_Name: BulletLevel2
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,10 +110,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.116515025
-  m_Height: 0.13382581
+  m_Radius: 0.123486504
+  m_Height: 0.24697301
   m_Direction: 1
-  m_Center: {x: 0, y: 0.000000018626451, z: 0.018487886}
+  m_Center: {x: 0, y: 0.000000014901161, z: 0.011516407}
 --- !u!54 &-7203065284685034627
 Rigidbody:
   m_ObjectHideFlags: 0

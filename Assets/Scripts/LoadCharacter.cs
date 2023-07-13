@@ -6,7 +6,8 @@ public class LoadCharacter : MonoBehaviour
 {
     [SerializeField] private Player[] _characterPrefacbs;
     [SerializeField] private Transform _spawPoint;
-    public CameraFollow CameraFollow;
+    [SerializeField] private CameraFollow _cameraFollow;
+    [SerializeField] private EnemyScript[] _enemies;    
 
 
     private void Start()
@@ -14,6 +15,10 @@ public class LoadCharacter : MonoBehaviour
         int selectCharacters = PlayerPrefs.GetInt("selectCharacters");
         Player prefab = _characterPrefacbs[selectCharacters];
         Player clone = Instantiate(prefab, _spawPoint.position, Quaternion.identity);
-        CameraFollow.SetTarget(clone.Hips);
+        _cameraFollow.SetTarget(clone.Hips);
+        foreach (EnemyScript enemy in _enemies)
+        {
+            enemy.SetTarget(clone.Hips);
+        }    
     }
 }
