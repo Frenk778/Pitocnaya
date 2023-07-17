@@ -3765,7 +3765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _healthBar: {fileID: 2315436774514803201}
-  _levelToReset: Level 1
   <Hips>k__BackingField: {fileID: 1112476794381034245}
 --- !u!1 &5842237026238302401
 GameObject:
@@ -4347,7 +4346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7492168234963699482
 Transform:
   m_ObjectHideFlags: 0
@@ -4391,7 +4390,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.07738888, y: -0.2670688, z: 1.193587}
   m_UseSpring: 0
   m_Spring:
     spring: 0

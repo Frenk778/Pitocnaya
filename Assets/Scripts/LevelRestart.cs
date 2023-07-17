@@ -17,11 +17,7 @@ public class LevelRestart : MonoBehaviour
                     RestartLevel();
                 }
             }
-        }
-        else
-        {
-            Destroy(other.gameObject);
-        }
+        }        
     }
 
     private void RestartLevel()

@@ -2544,7 +2544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4529020438827706794
 Transform:
   m_ObjectHideFlags: 0
@@ -3052,7 +3052,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _healthBar: {fileID: 2365231458478093862}
-  _levelToReset: Level 1
   <Hips>k__BackingField: {fileID: 550669403957257121}
 --- !u!1 &5125495294307682907
 GameObject:
