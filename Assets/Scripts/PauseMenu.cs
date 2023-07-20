@@ -27,6 +27,36 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+
+    private void OnGUI()
+    {
+        if (isPaused)
+        {
+            PauseGame();
+        }
+        else
+        {
+            ResumeGame();
+        }
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        isPaused = !focus;
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        isPaused = pause;
+    }
+
+
+    private void Awake()
+    {
+        Application.runInBackground = true;
+    }
+
+
     public void PauseGame()
     {
         _pauseMenu.SetActive(true);
@@ -45,5 +75,5 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
-    }    
+    }        
 }

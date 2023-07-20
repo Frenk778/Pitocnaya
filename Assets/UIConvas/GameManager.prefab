@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6798547656730711286}
   - component: {fileID: 6798547656730711285}
+  - component: {fileID: 1012643057311926289}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -76,8 +77,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5b688c06a96dd478f1c0404b47ac3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterPrefacbs:
-  - {fileID: 4665690215165352335, guid: 63369cdf0d3c9c8439c46f824f09c55b, type: 3}
-  - {fileID: 868992395397266374, guid: 30ba52694f8dffc4dbe581d2a8650bc4, type: 3}
-  - {fileID: 5218490681198926123, guid: 2e4614297c6c66546bf42331d8ba955b, type: 3}
-  spawPoint: {fileID: 6798547655582352102}
+  _characterPrefacbs: []
+  _spawPoint: {fileID: 0}
+  _cameraFollow: {fileID: 0}
+  _enemies: []
+--- !u!114 &1012643057311926289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6798547656730711284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09be28779b7fb2a42b0b96810408d70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

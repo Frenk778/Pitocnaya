@@ -24,4 +24,5 @@ public class LevelRestart : MonoBehaviour
     {
         SceneManager.LoadScene(_levelToReset);        
     }
+    
 }

@@ -4,14 +4,18 @@ using UnityEngine.UI;
 public class Hero : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
-    [SerializeField] private Slider _healthBar;    
+    [SerializeField] private Slider _healthBar;
+    [SerializeField] private Transform _healthpoint;
     [field: SerializeField] public Transform Hips { get; private set; }
-    public int Health { get => _health; set => _health = value; }   
+    public int Health { get => _health; set => _health = value; }
 
     private void Update()
     {
-        _healthBar.value=_health;
-    }    
+        Camera.main.WorldToScreenPoint(_healthpoint.position);
+        Vector3 position= Camera.main.WorldToScreenPoint(_healthpoint.position);
+        _healthBar.transform.position = position;        
+        _healthBar.value = _health;        
+    }
 
     public void TakeDamage(int damage)
     {
@@ -20,8 +24,8 @@ public class Hero : MonoBehaviour
         if (_health <= 0)
         {
             Die();
-            _healthBar.gameObject.SetActive(false);               
-        }        
+            _healthBar.gameObject.SetActive(false);
+        }
     }
 
     private void Die()
@@ -40,5 +44,5 @@ public class Hero : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
-    }    
+    }
 }
