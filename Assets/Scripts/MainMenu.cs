@@ -13,8 +13,11 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-        //SetLeanguage();
-        _leanLocalization.CurrentLanguage = Lenguage.English;
+#if UNITY_WEBGL && !UNITY_EDITOR
+        SetLeanguage();
+#endif
+
+        //_leanLocalization.CurrentLanguage = Lenguage.English;
     }
 
     public void PlayeGame()

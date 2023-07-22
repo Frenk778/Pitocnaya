@@ -2,11 +2,10 @@ using System.Collections;
 using UnityEngine;
 using Agava.YandexGames;
 using UnityEngine.SceneManagement;
-
-public class LoadSdk : MonoBehaviour
+public class LoadSdк : MonoBehaviour
 {
     private void Awake()
-    {        
+    {
         StartCoroutine(LoadYandexSdk());
     }
 
