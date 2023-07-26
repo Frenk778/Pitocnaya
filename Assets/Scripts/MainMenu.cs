@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
         SetLeanguage();
 #endif
 
-        //_leanLocalization.CurrentLanguage = Lenguage.English;
+        _leanLocalization.CurrentLanguage = Lenguage.English;
     }
 
     public void PlayeGame()
