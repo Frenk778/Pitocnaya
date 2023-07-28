@@ -13,11 +13,11 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        SetLeanguage();
-#endif
+//#if UNITY_WEBGL && !UNITY_EDITOR
+//        SetLeanguage();
+//#endif
 
-        _leanLocalization.CurrentLanguage = Lenguage.English;
+        //_leanLocalization.CurrentLanguage = Lenguage.English;
     }
 
     public void PlayeGame()
@@ -34,24 +34,27 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
-    
 
-    private void SetLeanguage()
-    {
-        switch (YandexGamesSdk.Environment.i18n.lang)
-        {
-            case EnglishLanguage:
-                _leanLocalization.CurrentLanguage = Lenguage.English;
-                break;
-            case RussionLanguage:
-                _leanLocalization.CurrentLanguage = Lenguage.Russian;
-                break;
-            case TurkishLanguage:
-                _leanLocalization.CurrentLanguage = Lenguage.Turkish;
-                break;
-            default:
-                _leanLocalization.CurrentLanguage = Lenguage.Russian;
-                break;
-        }
-    }
+
+    //private void SetLeanguage()
+    //{
+    //    switch (YandexGamesSdk.Environment.i18n.lang)
+    //    {
+    //        case EnglishLanguage:
+    //            _leanLocalization.CurrentLanguage = Lenguage.English;
+    //            break;
+
+    //        case RussionLanguage:
+    //            _leanLocalization.CurrentLanguage = Lenguage.Russian;
+    //            break;
+
+    //        case TurkishLanguage:
+    //            _leanLocalization.CurrentLanguage = Lenguage.Turkish;
+    //            break;
+
+    //        default:
+    //            _leanLocalization.CurrentLanguage = Lenguage.Russian;
+    //            break;
+    //    }
+    //}
 }

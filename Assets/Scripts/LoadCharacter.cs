@@ -12,7 +12,7 @@ public class LoadCharacter : MonoBehaviour
 
     private void Start()
     {
-        //InterstitialAd.Show(OpenCallback, CloseCallback);
+        InterstitialAd.Show(OpenCallback, CloseCallback);
         int selectCharacters = PlayerPrefs.GetInt("selectCharacters");
         Player prefab = _characterPrefacbs[selectCharacters];
         Player clone = Instantiate(prefab, _spawPoint.position, Quaternion.identity);
@@ -21,23 +21,19 @@ public class LoadCharacter : MonoBehaviour
         foreach (EnemyScript enemy in _enemies)
         {
             enemy.SetTarget(clone.Hips);
-        }
-
-        Debug.Log("Reklama");
+        }        
     }
 
     private void OpenCallback()
     {
-        Time.timeScale = 0f;
-        Debug.Log("Reklama");
+        Time.timeScale = 0f;        
     }
 
     private void CloseCallback(bool isClose)
     {
         if (isClose)
         {
-            Time.timeScale = 1f;
-            Debug.Log("Reklama zakrita");
+            Time.timeScale = 1f;            
         }
     }
 }

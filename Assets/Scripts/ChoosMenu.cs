@@ -123,4 +123,10 @@ public class ChoosMenu : MonoBehaviour
         level10b.interactable = false;
         PlayerPrefs.DeleteAll();
     }
+
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
