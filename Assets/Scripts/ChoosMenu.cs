@@ -18,8 +18,7 @@ public class ChoosMenu : MonoBehaviour
 
     private void Awake()
     {
-        levelComplete = PlayerPrefs.GetInt("LevelComplete");
-        Debug.Log(levelComplete + "startlevelGetInt");
+        levelComplete = PlayerPrefs.GetInt("LevelComplete");        
         level2b.interactable = false;
         level3b.interactable = false;
         level4b.interactable = false;

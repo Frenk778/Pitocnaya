@@ -31,16 +31,14 @@ public class LevelController : MonoBehaviour
             {
                 PlayerPrefs.SetInt("LevelComplete", sceneIndex - 3);
             }
-
-            Debug.Log(sceneIndex + "setInt");
+            
             Invoke("NextLevel", 0.1f);
         }
     }
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(sceneIndex + 1);
-        Debug.Log(sceneIndex + "LoadScene");
+        SceneManager.LoadScene(sceneIndex + 1);        
     }
 
     public void LoadMainMenu()
