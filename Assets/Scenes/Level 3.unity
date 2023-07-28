@@ -720,13 +720,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 212543651431957556, guid: e3e04657d3e9e904399890855e95e062, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e3e04657d3e9e904399890855e95e062, type: 3}
 --- !u!4 &275438066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 212543651431957563, guid: e3e04657d3e9e904399890855e95e062, type: 3}
   m_PrefabInstance: {fileID: 275438065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &275438067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 212543651431957562, guid: e3e04657d3e9e904399890855e95e062, type: 3}
+  m_PrefabInstance: {fileID: 275438065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &275438068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275438067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e332489903aaa74a80d332205fcd23d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &303400646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7387843645978006817, guid: 50df5da394e7b0f49bea49c01deb0ea1, type: 3}
@@ -4062,6 +4080,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5831929072535844383, guid: 50df5da394e7b0f49bea49c01deb0ea1, type: 3}
   m_PrefabInstance: {fileID: 1858898471}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &460933010743214212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950905694024294512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &2896738467991934031
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5908,6 +5941,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5409207276177582393}
   m_Mesh: {fileID: 4300000, guid: 6e3860b9d198f6542a105e224d341409, type: 3}
+--- !u!1 &5950905694024294512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460933010743214212}
+  - component: {fileID: 6096376517028602410}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &6096376517028602410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950905694024294512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47d12fd44289854fbecb1be99b93b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6132079671928585128
 Transform:
   m_ObjectHideFlags: 0
