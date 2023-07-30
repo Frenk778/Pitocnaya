@@ -4,15 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class ChoosMenu : MonoBehaviour
 {
-    public Button level2b;
-    public Button level3b;
-    public Button level4b;
-    public Button level5b;
-    public Button level6b;
-    public Button level7b;
-    public Button level8b;
-    public Button level9b;
-    public Button level10b;
+    [SerializeField] private Button level2b;
+    [SerializeField] private Button level3b;
+    [SerializeField] private Button level4b;
+    [SerializeField] private Button level5b;
+    [SerializeField] private Button level6b;
+    [SerializeField] private Button level7b;
+    [SerializeField] private Button level8b;
+    [SerializeField] private Button level9b;
+    [SerializeField] private Button level10b;
     int levelComplete;
 
 

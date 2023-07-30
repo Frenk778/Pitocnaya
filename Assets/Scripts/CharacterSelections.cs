@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class CharacterSelections : MonoBehaviour
 {
-    public GameObject[] characters;
-    public int selectCharacters = 0;
+    [SerializeField] private GameObject[] characters;
+    [SerializeField] private int selectCharacters = 0;
 
     public void NextCgaracter()
     {
@@ -19,7 +19,7 @@ public class CharacterSelections : MonoBehaviour
     {
         characters[selectCharacters].SetActive(false);
         selectCharacters--;
-        if (selectCharacters<0)
+        if (selectCharacters < 0)
         {
             selectCharacters += characters.Length;
         }
@@ -31,5 +31,5 @@ public class CharacterSelections : MonoBehaviour
     {
         PlayerPrefs.SetInt("selectCharacters", selectCharacters);
         SceneManager.LoadScene(3, LoadSceneMode.Single);
-    }    
+    }
 }

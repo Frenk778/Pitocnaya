@@ -12,7 +12,7 @@ public class LoadCharacter : MonoBehaviour
 
     private void Start()
     {
-        InterstitialAd.Show(OpenCallback, CloseCallback);
+        //InterstitialAd.Show(OpenCallback, CloseCallback);
         int selectCharacters = PlayerPrefs.GetInt("selectCharacters");
         Player prefab = _characterPrefacbs[selectCharacters];
         Player clone = Instantiate(prefab, _spawPoint.position, Quaternion.identity);

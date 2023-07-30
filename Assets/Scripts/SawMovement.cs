@@ -1,9 +1,9 @@
 using UnityEngine;
 
 public class SawMovement : MonoBehaviour
-{   
-    public Transform[] patrolPoints;
-    public float moveSpeed = 5f;
+{
+    [SerializeField] private Transform[] patrolPoints;
+    [SerializeField] private float moveSpeed = 5f;
     private int currentPointIndex = 0;
 
     private void Update()
