@@ -16,6 +16,7 @@ public class FireDamage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Hero hero = other.GetComponent<Hero>();
+
             if (hero != null)
             {
                 hero.TakeDamage(Damage);

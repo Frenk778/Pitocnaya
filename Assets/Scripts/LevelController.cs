@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     public static LevelController instance = null;
-    int sceneIndex;
-    int levelComplete;
+    private int sceneIndex;
+    private int levelComplete;
 
     private void Start()
     {
@@ -31,14 +31,14 @@ public class LevelController : MonoBehaviour
             {
                 PlayerPrefs.SetInt("LevelComplete", sceneIndex - 3);
             }
-            
+
             Invoke("NextLevel", 0.1f);
         }
     }
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(sceneIndex + 1);        
+        SceneManager.LoadScene(sceneIndex + 1);
     }
 
     public void LoadMainMenu()

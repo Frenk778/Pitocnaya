@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform _firePoint;
 
     private float _timeSinceLastShot = 0f;
+    private int _damage = 5;
 
     private void Update()
     {
@@ -25,6 +26,6 @@ public class Enemy : MonoBehaviour
 
         Bullet bulletComponent = bullet.GetComponent<Bullet>();
         bulletComponent.SetDirection(_firePoint.forward);
-        bulletComponent.Damage = 5;
+        bulletComponent.Damage = _damage;
     }
 }

@@ -5,9 +5,12 @@ public class Hero : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
     [SerializeField] private Slider _healthBar;
-    [SerializeField] private Transform _healthpoint;
+    [SerializeField] private Transform _healthpoint;    
+    [SerializeField] public int _characterCost = 50;
+    
     [field: SerializeField] public Transform Hips { get; private set; }
     public int Health { get => _health; set => _health = value; }
+    
 
     private void Update()
     {

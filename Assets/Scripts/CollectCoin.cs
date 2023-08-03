@@ -6,8 +6,7 @@ public class CollectCoin : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        CollactableControl.CoinCount += 1;
-        //this.gameObject.SetActive(false);
+        CollactableControl.CoinCount += 1;        
         Destroy(gameObject);
     }
 }
