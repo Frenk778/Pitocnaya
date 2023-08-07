@@ -13,6 +13,9 @@ public class ChoosMenu : MonoBehaviour
     [SerializeField] private Button level8b;
     [SerializeField] private Button level9b;
     [SerializeField] private Button level10b;
+    [SerializeField] private Button level11b;
+    [SerializeField] private Button level12b;
+    [SerializeField] private Button level13b;
     int levelComplete;
 
 
@@ -28,6 +31,9 @@ public class ChoosMenu : MonoBehaviour
         level8b.interactable = false;
         level9b.interactable = false;
         level10b.interactable = false;
+        level11b.interactable = false;
+        level12b.interactable = false;
+        level13b.interactable = false;
 
         switch (levelComplete)
         {
@@ -102,6 +108,48 @@ public class ChoosMenu : MonoBehaviour
                 level9b.interactable = true;
                 level10b.interactable = true;
                 break;
+
+            case 10:
+                level2b.interactable = true;
+                level3b.interactable = true;
+                level4b.interactable = true;
+                level5b.interactable = true;
+                level6b.interactable = true;
+                level7b.interactable = true;
+                level8b.interactable = true;
+                level9b.interactable = true;
+                level10b.interactable = true;
+                level11b.interactable = true;
+                break;
+            
+            case 11:
+                level2b.interactable = true;
+                level3b.interactable = true;
+                level4b.interactable = true;
+                level5b.interactable = true;
+                level6b.interactable = true;
+                level7b.interactable = true;
+                level8b.interactable = true;
+                level9b.interactable = true;
+                level10b.interactable = true;
+                level11b.interactable = true;
+                level12b.interactable = true;
+                break;
+
+            case 12:
+                level2b.interactable = true;
+                level3b.interactable = true;
+                level4b.interactable = true;
+                level5b.interactable = true;
+                level6b.interactable = true;
+                level7b.interactable = true;
+                level8b.interactable = true;
+                level9b.interactable = true;
+                level10b.interactable = true;
+                level11b.interactable = true;
+                level12b.interactable = true;
+                level13b.interactable = true;
+                break;
         }
     }
 
@@ -121,9 +169,11 @@ public class ChoosMenu : MonoBehaviour
         level8b.interactable = false;
         level9b.interactable = false;
         level10b.interactable = false;
+        level11b.interactable = false;
+        level12b.interactable = false;
+        level13b.interactable = false;
         PlayerPrefs.DeleteAll();
     }
-
 
     public void BackToMenu()
     {

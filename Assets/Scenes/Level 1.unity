@@ -945,8 +945,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 31.375057, y: 1.0000005, z: 1.0000001}
-  m_Center: {x: -15.187531, y: 0.000000006267277, z: 0.00000023870305}
+  m_Size: {x: 34.781094, y: 1.0000005, z: 1.0000001}
+  m_Center: {x: -13.48451, y: 0.0000000055645137, z: 0.0000002387232}
 --- !u!23 &327474130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1652,8 +1652,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 16.47765, y: 1.0000006, z: 1.0000001}
-  m_Center: {x: -7.7388253, y: -0.00000004263527, z: -9.189206e-11}
+  m_Size: {x: 17.686365, y: 1.0000006, z: 1.0000001}
+  m_Center: {x: -7.1344666, y: -0.000000042991854, z: -8.471644e-11}
 --- !u!23 &458604107
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3202,8 +3202,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 29.447142, y: 1.0000005, z: 1.0000001}
-  m_Center: {x: -14.223576, y: -0.00000016706063, z: 0.00000009535619}
+  m_Size: {x: 30.808016, y: 1.0000005, z: 1.0000001}
+  m_Center: {x: -13.5431385, y: -0.00000016743239, z: 0.00000009536424}
 --- !u!23 &970485150
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6533,7 +6533,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 973745334269272671, guid: daaed0612e1f56747a4ec21a73835515, type: 3}
     - {fileID: 973745332824488516, guid: daaed0612e1f56747a4ec21a73835515, type: 3}
     - {fileID: 973745332738343713, guid: daaed0612e1f56747a4ec21a73835515, type: 3}
     - {fileID: 973745334290771727, guid: daaed0612e1f56747a4ec21a73835515, type: 3}

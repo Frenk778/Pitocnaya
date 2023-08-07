@@ -10,11 +10,12 @@ public class LevelRestart : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Hero hero = other.GetComponent<Hero>();
+
             if (hero != null)
             {
                 if (hero.Health <= 0)
                 {
-                    RestartLevel();
+                    RestartLevel();                   
                 }
             }
         }        

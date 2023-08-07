@@ -2857,7 +2857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4529020437358709872}
   m_LocalRotation: {x: -0.0000000056794627, y: -0.99992365, z: 0.012356546, w: -0.00000038743013}
-  m_LocalPosition: {x: 0.01, y: 3.54, z: -0.08}
+  m_LocalPosition: {x: 0.01, y: 3.54, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3512,9 +3512,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9fa0289f77d9ac45b70e4b123acbaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasCanvas: 0
+  priceCanvas: {fileID: 0}
   _health: 100
   _healthBar: {fileID: 2365231458478093862}
   _healthpoint: {fileID: 6742655944999913077}
+  _characterCost: 50
   <Hips>k__BackingField: {fileID: 550669403957257121}
 --- !u!1 &5125495294307682907
 GameObject:
@@ -6373,7 +6376,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &7660071522342904768
 MonoBehaviour:

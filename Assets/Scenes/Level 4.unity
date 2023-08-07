@@ -655,6 +655,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -2.223
       objectReference: {fileID: 0}
+    - target: {fileID: 973745332824488516, guid: daaed0612e1f56747a4ec21a73835515, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 973745332824488517, guid: daaed0612e1f56747a4ec21a73835515, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4387,8 +4391,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.245018, y: 1, z: 0.9999998}
-  m_Center: {x: -1.6225091, y: 0, z: -8.3250665e-16}
+  m_Size: {x: 4.3950944, y: 1, z: 0.9999998}
+  m_Center: {x: -1.5474709, y: 0, z: -8.99154e-16}
 --- !u!23 &1310247496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15132,8 +15136,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5624185, y: 1, z: 1}
-  m_Center: {x: -2.2812095, y: 0, z: 4.1101511e-16}
+  m_Size: {x: 6.1513996, y: 1, z: 1}
+  m_Center: {x: -1.9867189, y: 0, z: 2.2822032e-16}
 --- !u!23 &1741182441
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15911,8 +15915,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.1505327, y: 1, z: 1}
-  m_Center: {x: -1.5752664, y: 0, z: -1.3722315e-16}
+  m_Size: {x: 4.4975333, y: 1, z: 1}
+  m_Center: {x: -1.4017661, y: 0, z: 4.76848e-16}
 --- !u!23 &1855568408
 MeshRenderer:
   m_ObjectHideFlags: 0

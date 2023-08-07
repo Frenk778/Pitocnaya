@@ -532,7 +532,11 @@ PlayerSettings:
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
-  m_TemplateCustomTags: {}
+  m_TemplateCustomTags:
+    BANNER_DYNAMIC_1: 
+    BANNER_DYNAMIC_2: 
+    BANNER_STATIC_1: 
+    BANNER_STATIC_2: 
   mobileMTRendering:
     Android: 1
     iPhone: 1
@@ -544,6 +548,8 @@ PlayerSettings:
     m_EncodingQuality: 1
   - m_BuildTarget: tvOS
     m_EncodingQuality: 1
+  - m_BuildTarget: WebGL
+    m_EncodingQuality: 0
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding:
   - m_BuildTarget: Android

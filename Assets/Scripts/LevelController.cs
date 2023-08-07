@@ -21,7 +21,7 @@ public class LevelController : MonoBehaviour
 
     public void isEndGame()
     {
-        if (sceneIndex == 13)
+        if (sceneIndex == 16)
         {
             Invoke("LoadMainMenu", 1f);
         }
@@ -44,5 +44,5 @@ public class LevelController : MonoBehaviour
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("LevelChoose");
-    }
+    }    
 }
