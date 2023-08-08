@@ -3,12 +3,11 @@ using Lean.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
 
 public class LeaderboardOpener : MonoBehaviour
 {
     private const string AnonymousName = "Anonymous";
-    private const string LeaderboardName = "1";
+    private const string LeaderboardName = "LeaderBoard";
 
     [SerializeField] private GameObject _leaderboardPanel;
     [SerializeField] private GameObject _notAuthorizedPanel;
@@ -48,14 +47,14 @@ public class LeaderboardOpener : MonoBehaviour
 
                 if (string.IsNullOrEmpty(name))
                 {
-                    //if (LeanLocalization.GetFirstCurrentLanguage() == Constants.RussianCode)
-                    //    name = "Аноним";
-                    //else if (LeanLocalization.GetFirstCurrentLanguage() == Constants.EnglishCode)
-                    //    name = AnonymousName;
-                    //else if (LeanLocalization.GetFirstCurrentLanguage() == Constants.TurkishCode)
-                        //name = "Anonim";
-                    //else
-                    //    name = "Аноним";
+                    if (LeanLocalization.GetFirstCurrentLanguage() == Constants.RussianCode)
+                        name = "Аноним";
+                    else if (LeanLocalization.GetFirstCurrentLanguage() == Constants.EnglishCode)
+                        name = AnonymousName;
+                    else if (LeanLocalization.GetFirstCurrentLanguage() == Constants.TurkishCode)
+                        name = "Anonim";
+                    else
+                        name = "Аноним";
                 }
 
                 _playersName[i].text = TextOprimizer(name);

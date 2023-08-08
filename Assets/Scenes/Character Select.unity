@@ -993,7 +993,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 90
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1485,12 +1485,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.09
+  m_fontSize: 25.6
   m_fontSizeBase: 24.11
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 27.09
+  m_fontSizeMax: 25.6
   m_fontStyle: 35
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1867,8 +1867,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 20, y: 0}
-  m_SizeDelta: {x: 40, y: -20}
+  m_AnchoredPosition: {x: 22, y: -5}
+  m_SizeDelta: {x: 17.7, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595899071
 MonoBehaviour:
@@ -3571,7 +3571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 40
+  m_text: 70
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3791,7 +3791,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.25
+  m_fontSize: 22.1
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4065,7 +4065,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.2
+  m_fontSize: 21.7
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6102,7 +6102,7 @@ MonoBehaviour:
   _health: 100
   _healthBar: {fileID: 1545082044}
   _healthpoint: {fileID: 1545082043}
-  _characterCost: 40
+  _characterCost: 70
   <Hips>k__BackingField: {fileID: 1545082043}
 --- !u!1 &919132149040271052 stripped
 GameObject:
@@ -6126,7 +6126,7 @@ MonoBehaviour:
   _health: 100
   _healthBar: {fileID: 1547599545}
   _healthpoint: {fileID: 1547599544}
-  _characterCost: 20
+  _characterCost: 90
   <Hips>k__BackingField: {fileID: 1547599544}
 --- !u!114 &2917646568584828709
 MonoBehaviour:

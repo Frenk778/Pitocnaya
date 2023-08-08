@@ -21,10 +21,8 @@ public class LoadSdк : MonoBehaviour
 
     private IEnumerator LoadYandexSdk()
     {
-        yield return YandexGamesSdk.Initialize(() => SetLeanguage());
+        yield return YandexGamesSdk.Initialize(() => SetLeanguage());        
     }
-
-
 
     private void SetLeanguage()
     {
@@ -46,7 +44,6 @@ public class LoadSdк : MonoBehaviour
                 _leanLocalization.CurrentLanguage = Lenguage.Russian;
                 break;
         }
-
 
         SceneManager.LoadScene(1);
     }
